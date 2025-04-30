@@ -9,3 +9,16 @@ pueden observar al darle uso a la APP pero que serían tediosas de desarrollar e
 
 Finalmente, él apartado backend consiste en un código básico en typescript que permite al proyecto enlazarse con los datos de la API, seleccionar el puerto local donde se va a mostrar y en que servidor local lo va a hacer. Este backend sienta las bases a través de schemas e interfaces
 para que el usuario pueda, a través de los desplegables APP y WEB modificar la información de la respectiva API.
+
+EJECUCIÓN:
+
+- Para ejecutar el código deberás descargar los archivos y tras realizar las precisas instalaciones (angular, ionic, node, etc) ejecutar desde la terminal dos raices (esto al ser un servidor tradicional).
+
+1º el backend: "/backend> npm start run:dev" (ejecuta la API para que pueda ser usada)
+2º la app de ionic: "/ionic> ionic serve" (lee la informacion de la API y la muestra en una APP con diversas funcionalidades)
+3º la web de angular: "/frontend> ng serve" (gestiona la informacion, añadiendo, actualizando o eliminando)
+
+Al estar conectado a MongoDB a traves de mongoose habra que insertar usuario, contraseña y nombre de la base de datos, cuyo env es este:
+
+"mongodb+srv://Root:Root@cluster0.zqgq0.mongodb.net/series?retryWrites=true&w=majority&appName=Cluster0"
+
